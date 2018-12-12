@@ -1,0 +1,44 @@
+.catch-header {
+  height: 580px;
+  background: url(../images/team_bg.jpg) no-repeat center;
+  .nav-box {
+    h1 {
+      margin-left: 100px;
+    }
+  }
+  p {
+    color: white;
+    top: 90px;
+    padding-top: 100px;
+  }
+}
+
+.catch-detailed {
+  width: 1200px;
+  margin: auto;
+  a {
+    img {
+      float: left;
+      width: 582px;
+      height: 378px;
+      margin-right: 30px;
+      transition: all 0.6s;
+      &:hover {
+        img {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  span {
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,168 @@
+.team-head {
+  height: 580px;
+  background: url(../images/team_bg.jpg) no-repeat center;
+  .nav-box {
+    h1 {
+      margin-left: 100px;
+    }
+  }
+  p {
+    color: white;
+    top: 90px;
+    padding-top: 100px;
+  }
+}
+
+.team-introduce-1 {
+  background: #f7f7f7;
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  div {
+    width: 1400px;
+    height: 368px;
+    position: relative;
+    margin: 50px auto;
+    a {
+      img {
+        float: right;
+        width: 583px;
+        height: 368px;
+        transition: all 0.6s;
+      }
+      &:hover {
+        img {
+          transform: scale(0.9);
+        }
+      }
+      input {
+        line-height: 30px;
+        font-size: 20px;
+        float: left;
+        width: 200px;
+        height: 30px;
+        border: 1px solid #c8c7c7;
+        border-radius: 5px;
+        position: absolute;
+        top: 332px;
+        left: 5px;
+        background: #c8c7c7;
+      }
+    }
+    h2 {
+      font-size: 36px;
+      padding-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    span {
+      line-height: 30px;
+    }
+  }
+}
+
+.team-introduce-2 {
+  width: 100%;
+  min-width: 1200px;
+  margin: 50px auto;
+  overflow: hidden;
+  div {
+    width: 1400px;
+    height: 368px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+    a {
+      img {
+        float: left;
+        width: 583px;
+        height: 368px;
+        padding-right: 20px;
+        transition: all 0.6s;
+      }
+      &:hover {
+        img {
+          transform: scale(0.9);
+        }
+      }
+      input {
+        line-height: 30px;
+        font-size: 20px;
+        width: 200px;
+        height: 30px;
+        border: 1px solid #7cdbe9;
+        border-radius: 5px;
+        position: absolute;
+        top: 332px;
+        left: 602px;
+        background: #7cdbe9;
+      }
+    }
+    h2 {
+      font-size: 36px;
+      padding-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    span {
+      line-height: 30px;
+    }
+  }
+}
+
+.team-introduce-3 {
+  background: #f7f7f7;
+  width: 100%;
+  min-width: 1200px;
+  margin: 50px auto 0;
+  overflow: hidden;
+  div {
+    width: 1400px;
+    height: 368px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+    a {
+      img {
+        float: right;
+        width: 583px;
+        height: 368px;
+        padding-left: 20px;
+        transition: all 0.6s;
+      }
+      &:hover {
+        img {
+          transform: scale(0.9);
+        }
+      }
+      input {
+        line-height: 30px;
+        font-size: 20px;
+        width: 200px;
+        height: 30px;
+        border: 1px solid #b27bd9;
+        border-radius: 5px;
+        position: absolute;
+        top: 332px;
+        left: 5px;
+        background: #b27bd9;
+      }
+    }
+    h2 {
+      font-size: 36px;
+      padding-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    span {
+      line-height: 30px;
+    }
+  }
+}

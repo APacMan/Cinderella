@@ -1,0 +1,85 @@
+.login-head-box {
+  height: 572px;
+  background: url(../images/login_bg.jpg) no-repeat center;
+  position: relative;
+  .nav-box {
+    h1 {
+      margin-left: 100px;
+    }
+  }
+  .login-box {
+    width: 1200px;
+    height: 415px;
+    margin: 40px auto 0;
+    .login-con {
+      width: 385px;
+      height: 415px;
+      margin: 0 auto;
+      background: white;
+      text-align: center;
+      p {
+        width: 385px;
+        background: gainsboro;
+        height: 54px;
+        line-height: 54px;
+        color: dimgrey;
+        font-size: 16px;
+        opacity: 1;
+        //padding-left: 18px;
+      }
+      .login {
+        width: 300px;
+        height: 200px;
+        margin: 50px auto 0;
+        text-align: center;
+        list-style-type: none;
+        li {
+          font-size: 14px;
+          margin-bottom: 10px;
+          input {
+            width: 280px;
+            height: 38px;
+            border: 1px solid gainsboro;
+            border-radius: 3px;
+            text-indent: 10px;
+            &:hover {
+              border: 1px solid cornflowerblue;
+            }
+          }
+          span {
+            opacity: 0;
+            font-size: 12px;
+            color: deeppink;
+          }
+          button {
+            width: 280px;
+            height: 40px;
+            background: cornflowerblue;
+            color: white;
+            font-size: 16px;
+            border: 1px solid cornflowerblue;
+            border-radius: 5px;
+          }
+        }
+      }
+      .login-tip {
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .retrieve {
+        font-size: 15px;
+        a {
+          &:hover {
+            color: cornflowerblue;
+          }
+        }
+      }
+    }
+  }
+}
+
+.login-footer {
+  margin-top: -50px;
+}

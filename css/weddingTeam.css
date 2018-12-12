@@ -1,0 +1,182 @@
+.team-head {
+  width: 100%;
+  height: 580px;
+  background: url(../images/team_bg.jpg) no-repeat center;
+  margin-bottom: 50px; }
+  .team-head .nav-box {
+    list-style: none;
+    background: gainsboro;
+    width: 100%;
+    height: 80px;
+    filter: alpha(Opacity=60);
+    opacity: 0.6; }
+    .team-head .nav-box h1 {
+      float: left;
+      line-height: 80px;
+      color: #C3B28C;
+      font-size: 50px;
+      margin-left: 100px; }
+    .team-head .nav-box .nav {
+      list-style: none;
+      height: 80px;
+      width: 1200px;
+      margin: 0 auto;
+      line-height: 80px; }
+      .team-head .nav-box .nav li {
+        float: right;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        position: relative;
+        top: 25px; }
+        .team-head .nav-box .nav li a {
+          text-decoration: none;
+          color: black; }
+          .team-head .nav-box .nav li a:hover {
+            color: #C3B28C; }
+  .team-head p {
+    width: 950px;
+    height: 210px;
+    margin: 0 auto;
+    filter: alpha(Opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    font-size: 36px;
+    color: white;
+    position: relative;
+    top: 90px;
+    text-align: center;
+    padding-top: 100px; }
+    .team-head p span {
+      font-size: 35px; }
+
+.team-introduce-1 {
+  background: #f7f7f7;
+  width: 100%;
+  overflow: hidden;
+  margin: auto; }
+  .team-introduce-1 div {
+    width: 1400px;
+    height: 368px;
+    position: relative;
+    margin: 50px auto; }
+    .team-introduce-1 div a img {
+      float: right;
+      width: 583px;
+      height: 368px;
+      transition: all 0.6s; }
+    .team-introduce-1 div a:hover img {
+      transform: scale(0.9); }
+    .team-introduce-1 div a input {
+      line-height: 30px;
+      font-size: 20px;
+      float: left;
+      width: 200px;
+      height: 30px;
+      border: 1px solid #c8c7c7;
+      border-radius: 5px;
+      position: absolute;
+      top: 332px;
+      left: 5px;
+      background: #c8c7c7; }
+    .team-introduce-1 div h2 {
+      font-size: 36px;
+      padding-bottom: 20px; }
+    .team-introduce-1 div p {
+      font-size: 20px;
+      padding-bottom: 10px; }
+    .team-introduce-1 div span {
+      line-height: 30px; }
+
+.team-introduce-2 {
+  width: 100%;
+  margin: 50px auto;
+  overflow: hidden; }
+  .team-introduce-2 div {
+    width: 1400px;
+    height: 368px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden; }
+    .team-introduce-2 div a img {
+      float: left;
+      width: 583px;
+      height: 368px;
+      padding-right: 20px;
+      transition: all 0.6s; }
+    .team-introduce-2 div a:hover img {
+      transform: scale(0.9); }
+    .team-introduce-2 div a input {
+      line-height: 30px;
+      font-size: 20px;
+      width: 200px;
+      height: 30px;
+      border: 1px solid #7cdbe9;
+      border-radius: 5px;
+      position: absolute;
+      top: 332px;
+      left: 602px;
+      background: #7cdbe9; }
+    .team-introduce-2 div h2 {
+      font-size: 36px;
+      padding-bottom: 20px; }
+    .team-introduce-2 div p {
+      font-size: 20px;
+      padding-bottom: 10px; }
+    .team-introduce-2 div span {
+      line-height: 30px; }
+
+.team-introduce-3 {
+  background: #f7f7f7;
+  width: 100%;
+  margin: 50px auto 0;
+  overflow: hidden; }
+  .team-introduce-3 div {
+    width: 1400px;
+    height: 368px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden; }
+    .team-introduce-3 div a img {
+      float: right;
+      width: 583px;
+      height: 368px;
+      padding-left: 20px;
+      transition: all 0.6s; }
+    .team-introduce-3 div a:hover img {
+      transform: scale(0.9); }
+    .team-introduce-3 div a input {
+      line-height: 30px;
+      font-size: 20px;
+      width: 200px;
+      height: 30px;
+      border: 1px solid #b27bd9;
+      border-radius: 5px;
+      position: absolute;
+      top: 332px;
+      left: 5px;
+      background: #b27bd9; }
+    .team-introduce-3 div h2 {
+      font-size: 36px;
+      padding-bottom: 20px; }
+    .team-introduce-3 div p {
+      font-size: 20px;
+      padding-bottom: 10px; }
+    .team-introduce-3 div span {
+      line-height: 30px; }
+
+.team-footer {
+  width: 100%;
+  height: 245px;
+  background: #f0efef;
+  margin-top: 100px; }
+  .team-footer p {
+    text-align: center;
+    color: #8c8984;
+    font-size: 18px;
+    line-height: 30px; }
+    .team-footer p img {
+      padding-top: 50px; }
+
+/*# sourceMappingURL=weddingTeam.css.map */

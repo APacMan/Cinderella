@@ -1,0 +1,84 @@
+.about-head {
+  height: 580px;
+  background: url(../images/about_bg.png) no-repeat center;
+  .nav-box {
+    h1 {
+      margin-left: 100px;
+    }
+  }
+  p {
+    color: white;
+    top: 90px;
+    padding-top: 100px;
+    span {
+      font-size: 35px;
+      line-height: 80px;
+    }
+  }
+}
+
+.synopsis {
+  width: 1200px;
+  margin: 0 auto 50px;
+  height: 400px;
+  img {
+    float: left;
+    margin-left: 50px;
+    width: 370px;
+    height: 370px;
+  }
+  h3 {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    float: left;
+    width: 500px;
+    font-size: 25px;
+  }
+  p, span {
+    float: left;
+    padding-left: 30px;
+    line-height: 25px;
+    //width: 300px;
+    display: inline-block;
+    word-break: break-word;
+  }
+  span {
+    width: 677px;
+  }
+}
+
+.weTeam {
+  width: 1200px;
+  margin: 50px auto 0;
+  height: 250px;
+  h3 {
+    font-size: 25px;
+  }
+  div {
+    overflow: hidden;
+    height: 198px;
+    position: relative;
+    ul {
+      width: 2336px;
+      height: 198px;
+      position: absolute;
+      li {
+        float: left;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 20px;
+        a {
+          img {
+            transition: all 0.6s;
+          }
+          &:hover {
+            img {
+              transform: scale(0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.dress-head {
+  height: 390px;
+  background: url(../images/dress_bg.png) no-repeat center;
+  .nav-box {
+    h1 {
+      margin-left: 100px;
+    }
+  }
+  p {
+    color: black;
+    top: 20px;
+    padding-top: 100px;
+  }
+}
+
+.make-box {
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+  h2 {
+    font-size: 40px;
+  }
+  > p {
+    font-size: 20px;
+  }
+  dl {
+    float: left;
+    width: 400px;
+    margin-top: 50px;
+    dt {
+      a {
+        img {
+          transition: all 0.6s;
+        }
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    dd {
+      font-size: 20px;
+      color: #4e4d4d;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    span {
+      line-height: 30px;
+      color: #363535;
+    }
+  }
+}
+
+.dress-box {
+  width: 1200px;
+  margin: 80px auto 0;
+  text-align: center;
+  overflow: hidden;
+  h2 {
+    font-size: 40px;
+  }
+  > p {
+    font-size: 20px;
+  }
+  dl {
+    float: left;
+    width: 400px;
+    margin-top: 50px;
+    dt {
+      a {
+        img {
+          transition: all 0.6s;
+          width: 350px;
+          height: 457px;
+        }
+        &:hover {
+          img {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+    dd {
+      font-size: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: #292828;
+    }
+    span {
+      line-height: 30px;
+      color: #8a8585;
+    }
+  }
+  div {
+    width: 1200px;
+    margin: auto;
+    .big-pic {
+      float: left;
+      margin-left: 20px;
+      margin-right: 170px;
+      img {
+        width: 572px;
+        height: 485px;
+      }
+      dd {
+        padding-left: 180px;
+      }
+      span {
+        padding-left: 180px;
+      }
+    }
+  }
+}
+
+.makeup-box {
+  width: 1200px;
+  margin: 80px auto 0;
+  text-align: center;
+  overflow: hidden;
+  h2 {
+    font-size: 40px;
+  }
+  > p {
+    font-size: 20px;
+  }
+  dl {
+    float: left;
+    position: relative;
+    .makeup-a {
+      img {
+        width: 400px;
+        height: 482px;
+      }
+      span {
+        display: none;
+        width: 400px;
+        box-sizing: border-box;
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        position: absolute;
+        bottom: 10px;
+        left: 0px;
+        text-align: right;
+        line-height: 30px;
+        h4{
+          font-size: 26px;
+        }
+      }
+      &:hover span {
+        display: block;
+      }
+    }
+  }
+}

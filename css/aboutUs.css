@@ -1,0 +1,107 @@
+.about-head {
+  width: 100%;
+  height: 580px;
+  background: url(../images/about_bg.png) no-repeat center;
+  margin-bottom: 50px; }
+  .about-head .nav-box {
+    list-style: none;
+    background: gainsboro;
+    width: 100%;
+    height: 80px;
+    filter: alpha(Opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6; }
+    .about-head .nav-box h1 {
+      float: left;
+      line-height: 80px;
+      color: #C3B28C;
+      font-size: 50px;
+      margin-left: 100px; }
+    .about-head .nav-box .nav {
+      list-style: none;
+      height: 80px;
+      width: 1200px;
+      margin: 0 auto;
+      line-height: 80px; }
+      .about-head .nav-box .nav li {
+        float: right;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        position: relative;
+        top: 25px; }
+        .about-head .nav-box .nav li a {
+          text-decoration: none;
+          color: black; }
+          .about-head .nav-box .nav li a:hover {
+            color: #C3B28C; }
+  .about-head p {
+    width: 950px;
+    height: 210px;
+    margin: 0 auto;
+    filter: alpha(Opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    font-size: 36px;
+    color: white;
+    position: relative;
+    top: 90px;
+    text-align: center;
+    padding-top: 100px; }
+    .about-head p span {
+      font-size: 35px;
+      line-height: 80px; }
+
+.synopsis {
+  width: 1200px;
+  margin: 0 auto 50px;
+  height: 400px; }
+  .synopsis img {
+    float: left;
+    margin-left: 50px;
+    width: 370px;
+    height: 370px; }
+  .synopsis h3 {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    float: left;
+    width: 500px;
+    font-size: 25px; }
+  .synopsis p, .synopsis span {
+    float: left;
+    padding-left: 30px;
+    line-height: 25px;
+    display: inline-block; }
+
+.weTeam {
+  width: 1200px;
+  margin: 50px auto 0;
+  height: 250px; }
+  .weTeam h3 {
+    font-size: 25px; }
+  .weTeam li {
+    float: left;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 20px; }
+    .weTeam li a img {
+      transition: all 0.6s; }
+    .weTeam li a:hover img {
+      transform: scale(0.9); }
+
+.about-foot {
+  width: 100%;
+  height: 245px;
+  background: #f0efef;
+  margin-top: 100px; }
+  .about-foot p {
+    text-align: center;
+    color: #8c8984;
+    font-size: 18px;
+    line-height: 30px; }
+    .about-foot p img {
+      padding-top: 50px; }
+
+/*# sourceMappingURL=aboutUs.css.map */

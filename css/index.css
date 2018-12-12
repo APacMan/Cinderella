@@ -756,9 +756,6 @@
     .news-head p span {
       font-size: 35px; }
 
-.news-wrap #second, #cang {
-  display: none; }
-
 .news-wrap {
   width: 1200px;
   margin: auto; }
@@ -773,6 +770,8 @@
     height: 160px;
     float: left;
     margin-bottom: 50px; }
+    .news-wrap .news-con-item.news-display {
+      display: none; }
     .news-wrap .news-con-item li a img {
       width: 200px;
       height: 133px;

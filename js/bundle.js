@@ -1,6 +1,7 @@
 $(function () {
     scorllTool();
     lunbo();
+    moreNews();
 });
 
 function lunbo() {
@@ -58,6 +59,28 @@ function scorllTool() {
         $('.contact div').css('display', 'none');
     });
 }
+
+function moreNews() {
+    var $item = $('.news-con-item');
+    var flag = true;
+    $('.news-more').on('click', function () {
+        if ($item.length > 6) {
+            console.log("1");
+            for (var i = 6; i < $item.length; i++) {
+                $($item[i]).fadeToggle('slow');
+            }
+        }
+        if (flag) {
+            $('.news-more').text('');
+            console.log($('.news-more').text());
+            flag = false;
+        } else {
+            $('.news-more').text('');
+            flag = true;
+        }
+    });
+}
+
 
 var isUser = false;//变量：标记用户名是否通过
 var isPwd = false;//变量：标记密码是否通过

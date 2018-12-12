@@ -19,10 +19,6 @@
   }
 }
 
-.news-wrap #second, #cang {
-  display: none;
-}
-
 .news-wrap {
   width: 1200px;
   margin: auto;
@@ -41,6 +37,10 @@
     height: 160px;
     float: left;
     margin-bottom: 50px;
+
+    &.news-display {
+      display: none;
+    }
 
     li {
       a {

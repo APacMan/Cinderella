@@ -26,7 +26,7 @@
 .news-wrap {
   width: 1200px;
   margin: auto;
-  height: 1000px;
+  //height: 1000px;
 
   .news-title {
     width: 1200px;
@@ -73,11 +73,15 @@
   }
 
   .news-more {
-    border: 1px solid #e0f5fe;
+    border: none;
     line-height: 40px;
     font-size: 20px;
     width: 100%;
     height: 40px;
-    background: #e0f5fe;
+    background: #fff;
+    outline: none;
+    font-family: icomoon;
+    cursor: pointer;
+    color: #CFCFCF;
   }
 }

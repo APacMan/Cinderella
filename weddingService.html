@@ -11,6 +11,7 @@
 </head>
 <body>
 <header class="head service-head">
+    <div class="service-media"></div>
     <div class="topNav">
         <nav class="nav-box">
             <h1>Cinderella</h1>
@@ -38,5 +39,20 @@
 </div>
 
 <script src="js/bundle.min.js"></script>
+<script src="js/vidbg.min.js"></script>
+<script type="application/javascript">
+    $(function () {
+        // 自动视频
+        $('.service-media').vidbg({
+            'mp4': 'media/service.mp4'
+        }, {
+            // Options
+            muted: true,
+            loop: true,
+            overlay: true,
+        });
+        $('.service-media').css("zIndex", 0);
+    });
+</script>
 </body>
 </html>

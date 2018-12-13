@@ -1,15 +1,19 @@
+@charset "UTF-8";
 .about-head {
   height: 580px;
   background: url(../images/about_bg.png) no-repeat center;
+
   .nav-box {
     h1 {
       margin-left: 100px;
     }
   }
+
   p {
     color: white;
     top: 90px;
     padding-top: 100px;
+
     span {
       font-size: 35px;
       line-height: 80px;
@@ -17,34 +21,81 @@
   }
 }
 
+// 图片遮罩层动画
+@keyframes shadeRightToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 .synopsis {
   width: 1200px;
   margin: 0 auto 50px;
   height: 400px;
-  img {
+  overflow: hidden;
+
+  .synopsis-img-box {
     float: left;
-    margin-left: 50px;
     width: 370px;
     height: 370px;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      .hoverImg {
+        opacity: 1;
+      }
+    }
+
+    .synopsis-img {
+      width: 370px;
+      height: 370px;
+      position: relative;
+    }
+
+    .shadeDiv {
+      position: absolute;
+      background-color: #fff;
+      width: 100%;
+      height: 33.33%;
+      left: 0;
+      @for $i from 1 through 3 {
+        &:nth-of-type(#{$i}) {
+          top: ($i - 1) * 33.33%;
+          animation: shadeRightToLeft 1s linear ($i - 1) * 0.2s forwards;
+        }
+      }
+    }
+
+    .hoverImg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 1.5s linear;
+    }
   }
+
   h3 {
     padding-left: 30px;
     padding-top: 10px;
     padding-bottom: 20px;
     float: left;
-    width: 500px;
+    width: 800px;
     font-size: 25px;
   }
-  p, span {
+
+  p, .synopsis-con {
+    width: 800px;
     float: left;
     padding-left: 30px;
     line-height: 25px;
-    //width: 300px;
-    display: inline-block;
     word-break: break-word;
-  }
-  span {
-    width: 677px;
   }
 }
 
@@ -52,26 +103,32 @@
   width: 1200px;
   margin: 50px auto 0;
   height: 250px;
+
   h3 {
     font-size: 25px;
   }
+
   div {
     overflow: hidden;
     height: 198px;
     position: relative;
+
     ul {
       width: 2336px;
       height: 198px;
       position: absolute;
+
       li {
         float: left;
         padding-right: 5px;
         padding-left: 5px;
         padding-top: 20px;
+
         a {
           img {
             transition: all 0.6s;
           }
+
           &:hover {
             img {
               transform: scale(0.9);

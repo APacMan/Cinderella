@@ -695,30 +695,64 @@
       font-size: 35px;
       line-height: 80px; }
 
+@keyframes shadeRightToLeft {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(100%); } }
 .synopsis {
   width: 1200px;
   margin: 0 auto 50px;
-  height: 400px; }
-  .synopsis img {
+  height: 400px;
+  overflow: hidden; }
+  .synopsis .synopsis-img-box {
     float: left;
-    margin-left: 50px;
     width: 370px;
-    height: 370px; }
+    height: 370px;
+    overflow: hidden;
+    position: relative; }
+    .synopsis .synopsis-img-box:hover .hoverImg {
+      opacity: 1; }
+    .synopsis .synopsis-img-box .synopsis-img {
+      width: 370px;
+      height: 370px;
+      position: relative; }
+    .synopsis .synopsis-img-box .shadeDiv {
+      position: absolute;
+      background-color: #fff;
+      width: 100%;
+      height: 33.33%;
+      left: 0; }
+      .synopsis .synopsis-img-box .shadeDiv:nth-of-type(1) {
+        top: 0%;
+        animation: shadeRightToLeft 1s linear 0s forwards; }
+      .synopsis .synopsis-img-box .shadeDiv:nth-of-type(2) {
+        top: 33.33%;
+        animation: shadeRightToLeft 1s linear 0.2s forwards; }
+      .synopsis .synopsis-img-box .shadeDiv:nth-of-type(3) {
+        top: 66.66%;
+        animation: shadeRightToLeft 1s linear 0.4s forwards; }
+    .synopsis .synopsis-img-box .hoverImg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 1.5s linear; }
   .synopsis h3 {
     padding-left: 30px;
     padding-top: 10px;
     padding-bottom: 20px;
     float: left;
-    width: 500px;
+    width: 800px;
     font-size: 25px; }
-  .synopsis p, .synopsis span {
+  .synopsis p, .synopsis .synopsis-con {
+    width: 800px;
     float: left;
     padding-left: 30px;
     line-height: 25px;
-    display: inline-block;
     word-break: break-word; }
-  .synopsis span {
-    width: 677px; }
 
 .weTeam {
   width: 1200px;

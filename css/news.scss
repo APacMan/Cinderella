@@ -1,6 +1,23 @@
 .news-head {
-  height: 390px;
-  background: url(../images/news_bg.png) no-repeat center / 100% auto;
+  height: 500px;
+  position: relative;
+  //background: url(../images/news_bg.png) no-repeat center / 100% auto;
+
+  .news-bg{
+    width: 100%;
+    min-width: 1200px;
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    margin: 0 auto;
+    height: 500px;
+    display: none;
+    @for $i from 1 through 3 {
+      &.news-bg#{$i} {
+        background: url("../images/news_bg" + $i + ".png") no-repeat center / auto 100%;
+      }
+    }
+  }
 
   .nav-box {
     h1 {
@@ -10,7 +27,7 @@
 
   p {
     color: white;
-    top: 20px;
+    top: 80px;
     padding-top: 100px;
 
     span {

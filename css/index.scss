@@ -3,50 +3,56 @@
   min-width: 1200px;
   margin-bottom: 50px;
 
-  .nav-box {
-    list-style: none;
+  .topNav {
     background: gainsboro;
     width: 100%;
     min-width: 1200px;
-    height: 80px;
     filter: alpha(Opacity=60);
     opacity: 0.6;
-    position: relative;
 
-    h1 {
-      float: left;
-      line-height: 80px;
-      color: #C3B28C;
-      font-size: 50px;
-    }
-
-    .nav {
+    .nav-box {
       list-style: none;
-      height: 80px;
       width: 1200px;
+      height: 80px;
+      position: relative;
       margin: 0 auto;
-      line-height: 80px;
 
-      li {
-        float: right;
-        width: 100px;
-        height: 30px;
-        text-align: center;
-        line-height: 30px;
-        position: relative;
-        top: 25px;
+      h1 {
+        float: left;
+        line-height: 80px;
+        color: #C3B28C;
+        font-size: 50px;
+      }
 
-        a {
-          text-decoration: none;
-          color: black;
+      .nav {
+        list-style: none;
+        height: 80px;
+        width: 1200px;
+        margin: 0 auto;
+        line-height: 80px;
 
-          &:hover {
-            color: #C3B28C;
+        li {
+          float: right;
+          width: 100px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          position: relative;
+          top: 25px;
+
+          a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+              color: #C3B28C;
+            }
           }
         }
       }
     }
   }
+
 
   p {
     width: 950px;
@@ -536,6 +542,7 @@
 @import "catch.scss";
 @import "aboutUs.scss";
 @import "news.scss";
+@import "weddingService.scss";
 
 
 

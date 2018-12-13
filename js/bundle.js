@@ -1,9 +1,12 @@
 $(function () {
     scorllTool();
+    clickAudio();
     lunbo();
     moreNews();
+    newsLunBo();
 });
 
+// 关于我们轮播图
 function lunbo() {
     var current = 0;
 
@@ -60,6 +63,7 @@ function scorllTool() {
     });
 }
 
+// 最新动态加载更多
 function moreNews() {
     var $item = $('.news-con-item');
     var flag = true;
@@ -81,6 +85,22 @@ function moreNews() {
     });
 }
 
+// 最新动态轮播
+function newsLunBo() {
+    var $newsBg = $('.news-bg');
+    var first = true;
+    var index = 1;
+    setInterval(function () {
+        if (index == 1 && first) {
+            $($newsBg[0]).fadeOut(2000);
+        }
+        $($newsBg[index]).fadeIn(5000).fadeOut(2000);
+        index++;
+        if (index >= $newsBg.length) {
+            index = 0;
+        }
+    }, 5500);
+}
 
 var isUser = false;//变量：标记用户名是否通过
 var isPwd = false;//变量：标记密码是否通过
@@ -125,13 +145,15 @@ function checkAll() {
 }
 
 // 为按钮绑定点击事件，控制音频播放
-var audioDom = document.querySelector('audio');
-$('.audioControl').click(function () {
-    if (audioDom.paused) {
-        audioDom.play();
-        $(this).css('background-image', 'url("images/play.png")');
-    } else {
-        audioDom.pause();
-        $(this).css('background-image', 'url("images/pause.png")');
-    }
-});
+function clickAudio() {
+    var audioDom = document.querySelector('audio');
+    $('.audioControl').click(function () {
+        if (audioDom.paused) {
+            audioDom.play();
+            $(this).css('background-image', 'url("images/play.png")');
+        } else {
+            audioDom.pause();
+            $(this).css('background-image', 'url("images/pause.png")');
+        }
+    });
+}

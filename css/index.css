@@ -854,8 +854,8 @@
 .service-head {
   width: 100%;
   height: 580px;
-  margin-bottom: 50px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 20px; }
   .service-head .service-media {
     position: absolute;
     top: 0;
@@ -874,5 +874,250 @@
     padding-top: 100px; }
     .service-head p span {
       font-size: 35px; }
+
+.service-wrap {
+  width: 1200px;
+  background-color: #fff;
+  margin: 0 auto; }
+  .service-wrap .service-item {
+    display: flex;
+    height: 580px;
+    overflow: hidden;
+    align-items: center; }
+    .service-wrap .service-item .group-con-item {
+      float: right;
+      width: 240px;
+      padding-right: 20%; }
+      .service-wrap .service-item .group-con-item h1 {
+        font-size: 20px;
+        margin-top: 25px;
+        font-weight: normal;
+        color: #97765b;
+        text-transform: uppercase; }
+      .service-wrap .service-item .group-con-item h2 {
+        font-size: 25px;
+        letter-spacing: 10px;
+        color: #97765b; }
+      .service-wrap .service-item .group-con-item span {
+        display: inline-block;
+        width: 40px;
+        height: 2px;
+        background-color: #97765b;
+        margin: 15px 0; }
+      .service-wrap .service-item .group-con-item p {
+        line-height: 25px;
+        font-size: 15px; }
+      .service-wrap .service-item .group-con-item a {
+        display: inline-block;
+        color: #97765b;
+        font-size: 15px;
+        line-height: 45px;
+        margin-top: 20px; }
+  .service-wrap .pink-group .pink-group1 {
+    width: 480px;
+    height: 580px;
+    float: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center; }
+    .service-wrap .pink-group .pink-group1 .pink-item1 {
+      float: left;
+      width: 155px;
+      height: 250px;
+      margin: 20px 40px 0; }
+      .service-wrap .pink-group .pink-group1 .pink-item1 img {
+        width: 100%;
+        height: 100%;
+        border: none; }
+    .service-wrap .pink-group .pink-group1 .pink-item2 {
+      box-sizing: border-box; }
+    .service-wrap .pink-group .pink-group1 .group-con-item {
+      padding-right: 10%; }
+  .service-wrap .pink-group .pink-group2 {
+    width: 720px;
+    height: 580px;
+    float: right;
+    position: relative;
+    background: url("../images/sample1.jpg") no-repeat center; }
+    .service-wrap .pink-group .pink-group2:hover .group-info {
+      transform: scale(1);
+      opacity: 1;
+      transition: all 0.4s linear; }
+      .service-wrap .pink-group .pink-group2:hover .group-info h3 {
+        opacity: 1;
+        transform: none;
+        transition: all 0.4s 0.2s linear; }
+      .service-wrap .pink-group .pink-group2:hover .group-info .line {
+        width: 50%;
+        transition: all 0.4s 0.2s linear; }
+      .service-wrap .pink-group .pink-group2:hover .group-info .infoLink-icon {
+        transform: none;
+        opacity: 1;
+        transition: all 0.4s 0.2s linear; }
+      .service-wrap .pink-group .pink-group2:hover .group-info p {
+        transform: none;
+        opacity: .8;
+        transition: all 0.4s 0.2s linear; }
+    .service-wrap .pink-group .pink-group2 .group-info {
+      position: absolute;
+      left: 2%;
+      top: 2%;
+      width: 96%;
+      height: 96%;
+      background-color: rgba(255, 255, 255, 0.7);
+      transform: scale(1.1);
+      opacity: 0; }
+      .service-wrap .pink-group .pink-group2 .group-info h3 {
+        opacity: 0;
+        transform: translateY(-20px);
+        position: relative;
+        padding: 15px 0;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-top: 180px;
+        color: #97765b; }
+      .service-wrap .pink-group .pink-group2 .group-info .line {
+        width: 0;
+        height: 2px;
+        margin: 10px auto;
+        background-color: #fff; }
+      .service-wrap .pink-group .pink-group2 .group-info .infoLink-icon {
+        transform: translateY(20px);
+        opacity: 0;
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        margin: 0 auto;
+        padding: 15px 0; }
+        .service-wrap .pink-group .pink-group2 .group-info .infoLink-icon a {
+          text-align: center; }
+          .service-wrap .pink-group .pink-group2 .group-info .infoLink-icon a i {
+            font-family: icomoon;
+            font-size: 25px;
+            font-style: normal;
+            color: rgba(0, 0, 0, 0.5); }
+      .service-wrap .pink-group .pink-group2 .group-info p {
+        transform: translateY(-20px);
+        opacity: 0;
+        text-align: center;
+        padding: 0 100px;
+        line-height: 30px;
+        color: #97765b; }
+  .service-wrap .tour-group {
+    background: url("../images/sample2.jpg") no-repeat;
+    background-size: cover; }
+    .service-wrap .tour-group .tour-group1 {
+      width: 63%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+  .service-wrap .ins-group {
+    background: url("../images/bgins1.png") no-repeat left; }
+    .service-wrap .ins-group .ins-group1 {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+    .service-wrap .ins-group .ins-group2 {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      background: url("../images/sample3.jpg") right bottom no-repeat;
+      background-size: cover;
+      position: relative; }
+      .service-wrap .ins-group .ins-group2:hover .group-info {
+        transform: scale(1);
+        opacity: 1;
+        transition: all 0.4s linear; }
+        .service-wrap .ins-group .ins-group2:hover .group-info h3 {
+          opacity: 1;
+          transform: none;
+          transition: all 0.4s 0.2s linear; }
+        .service-wrap .ins-group .ins-group2:hover .group-info .line {
+          width: 50%;
+          transition: all 0.4s 0.2s linear; }
+        .service-wrap .ins-group .ins-group2:hover .group-info .infoLink-icon {
+          transform: none;
+          opacity: 1;
+          transition: all 0.4s 0.2s linear; }
+        .service-wrap .ins-group .ins-group2:hover .group-info p {
+          transform: none;
+          opacity: .8;
+          transition: all 0.4s 0.2s linear; }
+      .service-wrap .ins-group .ins-group2 .group-info {
+        position: absolute;
+        left: 2%;
+        top: 2%;
+        width: 96%;
+        height: 96%;
+        background-color: rgba(255, 255, 255, 0.7);
+        transform: scale(1.1);
+        opacity: 0; }
+        .service-wrap .ins-group .ins-group2 .group-info h3 {
+          opacity: 0;
+          transform: translateY(-20px);
+          position: relative;
+          padding: 15px 0;
+          font-size: 30px;
+          letter-spacing: 2px;
+          text-align: center;
+          margin-top: 180px;
+          color: #97765b; }
+        .service-wrap .ins-group .ins-group2 .group-info .line {
+          width: 0;
+          height: 2px;
+          margin: 10px auto;
+          background-color: #fff; }
+        .service-wrap .ins-group .ins-group2 .group-info .infoLink-icon {
+          transform: translateY(20px);
+          opacity: 0;
+          display: block;
+          position: relative;
+          width: 25px;
+          height: 25px;
+          margin: 0 auto;
+          padding: 15px 0; }
+          .service-wrap .ins-group .ins-group2 .group-info .infoLink-icon a {
+            text-align: center; }
+            .service-wrap .ins-group .ins-group2 .group-info .infoLink-icon a i {
+              font-family: icomoon;
+              font-size: 25px;
+              font-style: normal;
+              color: rgba(0, 0, 0, 0.5); }
+        .service-wrap .ins-group .ins-group2 .group-info p {
+          transform: translateY(-20px);
+          opacity: 0;
+          text-align: center;
+          padding: 0 100px;
+          line-height: 30px;
+          color: #97765b; }
+
+.address-box {
+  width: 1200px;
+  margin: 20px auto 0px;
+  background-color: #fff; }
+  .address-box ul {
+    text-align: center; }
+    .address-box ul li {
+      display: inline-block;
+      margin: 0 7px 20px;
+      width: 102px;
+      height: 34px;
+      line-height: 34px;
+      border: 1px #97765b solid; }
+      .address-box ul li a {
+        width: 102px;
+        height: 34px;
+        display: block; }
+      .address-box ul li:hover {
+        transition: all 0.4s linear;
+        background-color: #97765b; }
+        .address-box ul li:hover a {
+          color: #fff; }
 
 /*# sourceMappingURL=index.css.map */

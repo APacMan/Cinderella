@@ -10,6 +10,7 @@
 - jquery
 - sass
 还用到了html5shiv.min.js，用来低版本兼容html5的新标签。
+- vidbg.min.js插件
 
 ## 使用方法
 网站为静态页面，暂时没有后台数据交互，只有页面效果，所以直接down下来就可以直接打开使用。

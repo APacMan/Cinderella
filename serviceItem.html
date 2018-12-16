@@ -5,15 +5,77 @@
     <title>Cinderella</title>
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" href="css/base.min.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
-    <link rel="stylesheet" href="css/serviceItem.css"/>
+    <link rel="stylesheet" href="css/index.min.css"/>
+    <link rel="stylesheet" href="css/serviceItem.min.css"/>
     <script src="js/jquery.js"></script>
     <script src="js/html5shiv.min.js"></script>
 </head>
 <body>
+<div class="covers">
+    <div class="covers-con"></div>
+    <div class="covers-msg">
+        <h2>
+            <i>「</i>
+            <a href="#">主题婚纱</a>
+            <i>」</i>
+        </h2>
+        <h3>Cinderella</h3>
+        <p>
+            <a href="index.html">返回首页</a>
+            <a href="#">&nbsp;|&nbsp;</a>
+            <a href="#">品牌专栏</a>
+        </p>
+    </div>
+</div>
+<div class="theme-wrap">
 
-
+    <div class="power-wrap">
+        <div class="power-con">
+            <div class="solo-info">
+                <dl class="ky-1">
+                    <dt>PHOTO SITE</dt>
+                    <dd>2019</dd>
+                </dl>
+                <dl class="ky-3">
+                    <dt>CAPTURE</dt>
+                    <dd><h1 id="power-title">COLOR-PINK</h1></dd>
+                </dl>
+                <div class="ky-heat">
+                    <dl class="views">
+                        <dd><a href="weddingService.html" class="break"><i></i>返回列表</a></dd>
+                    </dl>
+                    <a href="#" class="rightbottom"></a>
+                    <a href="#" class="rightbottom"></a>
+                </div>
+            </div>
+            <div class="views-box">
+                <ul class="views-con"></ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="js/bundle.min.js"></script>
+<script src="lib/artTemplate/template-native.js"></script>
+<script type="text/x-artTemplate" id="pointTemplate">
+    <% for(var i = 0 ; i < comments.length ; i ++){ %>
+    <li><a href="<%=comments[i].url%>"><img src="<%=comments[i].url%>" alt=""></a></li>
+    <% } %>
+</script>
+<script>
+    $(function () {
+        if (GetQueryString('theme')) {
+            $.getJSON('data/viewItem.json', {}, function (res) {
+                // 渲染图片
+                var html = template('pointTemplate', {comments: res[GetQueryString('theme')].view});
+                // 改变封面
+                $('.covers-con').css("backgroundImage", "url('" + res[GetQueryString('theme')].cover + "')");
+                // 修改标题
+                $('#power-title').text(res[GetQueryString('theme')].title);
+                $('.views-con').html(html);
+            });
+        }
+    });
+</script>
 </body>
 </html>

@@ -102,6 +102,14 @@ function newsLunBo() {
     }, 5500);
 }
 
+// 获取url中的参数
+function GetQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]);
+    return null;
+}
+
 var isUser = false;//变量：标记用户名是否通过
 var isPwd = false;//变量：标记密码是否通过
 function checkUserName() {
